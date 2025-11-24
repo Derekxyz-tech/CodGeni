@@ -81,7 +81,7 @@ Pour déployer sur Hostinger, consultez le fichier [DEPLOYMENT.md](./DEPLOYMENT.
 | `SMTP_SECURE` | Connexion sécurisée | `false` |
 | `SMTP_USER` | Email d'envoi | `votre-email@gmail.com` |
 | `SMTP_PASSWORD` | Mot de passe d'application | `votre-mot-de-passe` |
-| `TO_EMAIL` | Email destinataire | `contact@codgeni.com` |
+| `TO_EMAIL` | Email destinataire | `contactcodgeniht@gmail.com` |
 
 ## 📄 Pages légales
 
@@ -103,7 +103,7 @@ Vérifiez que toutes les dépendances sont installées : `npm install`
 
 ## 📞 Support
 
-Pour toute question, contactez-nous à contact@codgeni.com
+Pour toute question, contactez-nous à contactcodgeniht@gmail.com
 
 ## 📄 Licence
 

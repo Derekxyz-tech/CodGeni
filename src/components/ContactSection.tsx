@@ -97,7 +97,7 @@ export default function ContactSection() {
                     </div>
                     <div className="ml-4">
                       <h4 className="text-lg font-medium text-gray-900">Email</h4>
-                      <p className="mt-1 text-gray-600">contact@codgeni.com</p>
+                      <p className="mt-1 text-gray-600">contactcodgeniht@gmail.com</p>
                     </div>
                   </div>
                   
@@ -109,7 +109,7 @@ export default function ContactSection() {
                     </div>
                     <div className="ml-4">
                       <h4 className="text-lg font-medium text-gray-900">Téléphone</h4>
-                      <p className="mt-1 text-gray-600">+509 36407266</p>
+                      <p className="mt-1 text-gray-600">+509 36 40 72 66</p>
                     </div>
                   </div>
                 </div>

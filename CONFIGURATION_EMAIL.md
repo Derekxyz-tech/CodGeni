@@ -1,6 +1,6 @@
 # Configuration de l'envoi d'emails
 
-Pour que le formulaire de contact fonctionne et envoie des emails à `contact@codgeni.com`, vous devez configurer les variables d'environnement SMTP.
+Pour que le formulaire de contact fonctionne et envoie des emails à `contactcodgeniht@gmail.com`, vous devez configurer les variables d'environnement SMTP.
 
 ## Étapes de configuration
 
@@ -89,7 +89,7 @@ Après avoir configuré les variables d'environnement:
 
 1. Redémarrez le serveur de développement (`npm run dev`)
 2. Remplissez le formulaire de contact sur votre site
-3. Vérifiez que l'email arrive bien à `contact@codgeni.com`
+3. Vérifiez que l'email arrive bien à `contactcodgeniht@gmail.com`
 
 ## Dépannage
 

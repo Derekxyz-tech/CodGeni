@@ -159,19 +159,39 @@ export default function Hero() {
             >
               <div className="flex -space-x-3">
                 {[
-                  'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face',
+                  null, // Icône silhouette pour la première
                   'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
                   'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face'
                 ].map((imageUrl, i) => (
                   <div
                     key={i}
-                    className="w-10 h-10 rounded-full border-2 border-white bg-neutral-200 overflow-hidden"
-                    style={{
-                      backgroundImage: `url(${imageUrl})`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center',
-                    }}
-                  />
+                    className="w-10 h-10 rounded-full border-2 border-white bg-neutral-200 overflow-hidden flex items-center justify-center"
+                  >
+                    {imageUrl ? (
+                      <div
+                        style={{
+                          backgroundImage: `url(${imageUrl})`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                          width: '100%',
+                          height: '100%',
+                        }}
+                      />
+                    ) : (
+                      <svg
+                        className="w-6 h-6 text-neutral-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    )}
+                  </div>
                 ))}
               </div>
               <div className="text-sm text-neutral-600">

@@ -22,7 +22,7 @@ export default function ContactBanner() {
               Nous contacter
             </Link>
             <a
-              href="tel:+509XXXXXXXX"
+              href="tel:+50936407266"
               className="px-8 py-3 border-2 border-primary text-primary font-medium rounded-lg hover:bg-primary/5 transition-colors text-center"
             >
               Nous appeler

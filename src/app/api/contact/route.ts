@@ -45,7 +45,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Email destinataire (utilise TO_EMAIL si défini, sinon valeur par défaut)
-    const recipientEmail = process.env.TO_EMAIL || 'contact@codgeni.com';
+    const recipientEmail = process.env.TO_EMAIL || 'contactcodgeniht@gmail.com';
 
     // Contenu de l'email
     const mailOptions = {
