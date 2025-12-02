@@ -159,9 +159,9 @@ export default function Hero() {
             >
               <div className="flex -space-x-3">
                 {[
-                  null, // Icône silhouette pour la première
                   'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
-                  'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face'
+                  null, // Icône silhouette pour la deuxième
+                  'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=100&h=100&fit=crop&crop=face'
                 ].map((imageUrl, i) => (
                   <div
                     key={i}
