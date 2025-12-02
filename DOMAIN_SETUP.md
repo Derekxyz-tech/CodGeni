@@ -161,7 +161,7 @@ NEXT_PUBLIC_SITE_URL=https://votredomaine.com
 Puis modifiez `src/app/layout.tsx` :
 
 ```typescript
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://codgeni.ht';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://codgeni.com';
 
 export const metadata: Metadata = {
   // ...

@@ -48,7 +48,7 @@ Créez un fichier `.env.local` avec les variables suivantes :
 
 ```env
 # URL du site
-NEXT_PUBLIC_SITE_URL=https://codgeni.ht
+NEXT_PUBLIC_SITE_URL=https://codgeni.com
 
 # Vérification Google Search Console
 NEXT_PUBLIC_GOOGLE_VERIFICATION=your-verification-code
@@ -64,7 +64,7 @@ NEXT_PUBLIC_LINKEDIN_URL=https://linkedin.com/company/codgeni
 NEXT_PUBLIC_INSTAGRAM_URL=https://instagram.com/codgeni
 
 # Informations de contact (pour données structurées)
-NEXT_PUBLIC_CONTACT_EMAIL=contact@codgeni.ht
+NEXT_PUBLIC_CONTACT_EMAIL=contact@codgeni.com
 NEXT_PUBLIC_CONTACT_PHONE=+509xxxxxxxx
 ```
 
@@ -74,7 +74,7 @@ NEXT_PUBLIC_CONTACT_PHONE=+509xxxxxxxx
 1. Allez sur [Google Search Console](https://search.google.com/search-console)
 2. Ajoutez votre propriété (site web)
 3. Allez dans "Sitemaps"
-4. Ajoutez : `https://codgeni.ht/sitemap.xml`
+4. Ajoutez : `https://codgeni.com/sitemap.xml`
 
 ### 2. Vérifier la propriété
 1. Dans Google Search Console, allez dans "Paramètres" > "Propriété"
@@ -117,10 +117,10 @@ NEXT_PUBLIC_CONTACT_PHONE=+509xxxxxxxx
 ## 📊 Vérification
 
 ### URLs importantes à vérifier :
-- `https://codgeni.ht/sitemap.xml` - Sitemap
-- `https://codgeni.ht/robots.txt` - Robots.txt
-- `https://codgeni.ht/manifest.json` - Manifest
-- `https://codgeni.ht/` - Page d'accueil avec métadonnées
+- `https://codgeni.com/sitemap.xml` - Sitemap
+- `https://codgeni.com/robots.txt` - Robots.txt
+- `https://codgeni.com/manifest.json` - Manifest
+- `https://codgeni.com/` - Page d'accueil avec métadonnées
 
 ### Outils de test :
 - [Google Rich Results Test](https://search.google.com/test/rich-results)

@@ -10,7 +10,7 @@ export interface PageMetadata {
   path?: string;
 }
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://codgeni.ht';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://codgeni.com';
 
 /**
  * Génère l'URL complète pour une image

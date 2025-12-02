@@ -47,7 +47,7 @@ export interface ServiceSchema {
   description: string;
 }
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://codgeni.ht';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://codgeni.com';
 
 export const getOrganizationSchema = (): OrganizationSchema => ({
   '@context': 'https://schema.org',

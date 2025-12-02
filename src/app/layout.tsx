@@ -20,7 +20,7 @@ const poppins = Poppins({
 });
 
 // URL du site (configurable via variable d'environnement)
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://codgeni.ht';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://codgeni.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
