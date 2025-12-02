@@ -19,12 +19,8 @@ const nextConfig = {
     } : false,
   },
   experimental: {
-    // Activer le nouveau système de rendu React 18
-    reactRoot: true,
     // Optimisations de performance
     scrollRestoration: true,
-    // Optimisation des polices
-    optimizeFonts: true,
   },
   // Configuration pour les en-têtes de sécurité et SEO
   async headers() {
