@@ -49,12 +49,20 @@ export interface ServiceSchema {
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://codgeni.com';
 
+/**
+ * Encode l'URL d'une image en préservant les slashes mais en encodant les espaces et caractères spéciaux
+ */
+function encodeImageUrl(path: string): string {
+  const parts = path.split('/');
+  return parts.map(part => part ? encodeURIComponent(part) : '').join('/');
+}
+
 export const getOrganizationSchema = (): OrganizationSchema => ({
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'CodGeni',
   url: siteUrl,
-  logo: `${siteUrl}/images/logo.png`,
+  logo: `${siteUrl}${encodeImageUrl('/images/Code Geniuses & Co..png')}`,
   description: 'Agence de développement web créative basée en Haïti, spécialisée dans la création de sites web sur mesure, applications web et expériences digitales innovantes.',
   address: {
     '@type': 'PostalAddress',

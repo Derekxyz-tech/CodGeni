@@ -22,6 +22,17 @@ const poppins = Poppins({
 // URL du site (configurable via variable d'environnement)
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://codgeni.com';
 
+/**
+ * Encode l'URL d'une image en préservant les slashes mais en encodant les espaces et caractères spéciaux
+ */
+function encodeImageUrl(path: string): string {
+  const parts = path.split('/');
+  return parts.map(part => part ? encodeURIComponent(part) : '').join('/');
+}
+
+const logoImagePath = encodeImageUrl('/images/Code Geniuses & Co..png');
+const logoImageUrl = `${siteUrl}${logoImagePath}`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -65,6 +76,12 @@ export const metadata: Metadata = {
     description: 'Agence de développement web créative basée en Haïti, spécialisée dans la création de sites web sur mesure, applications web et expériences digitales innovantes.',
     images: [
       {
+        url: logoImageUrl,
+        width: 1200,
+        height: 630,
+        alt: 'Code Geniuses & Co. - Logo CodGeni',
+      },
+      {
         url: `${siteUrl}/images/og-image.jpg`,
         width: 1200,
         height: 630,
@@ -77,7 +94,10 @@ export const metadata: Metadata = {
     title: 'CodGeni — Développement web & expériences digitales | Haïti',
     description: 'Agence de développement web créative basée en Haïti, spécialisée dans la création de sites web sur mesure et expériences digitales innovantes.',
     creator: '@codgeni_ht',
-    images: [`${siteUrl}/images/og-image.jpg`],
+    images: [
+      logoImageUrl,
+      `${siteUrl}/images/og-image.jpg`,
+    ],
   },
   robots: {
     index: true,
@@ -122,6 +142,12 @@ export default function RootLayout({
         <meta name="geo.region" content="HT" />
         <meta name="geo.placename" content="Haïti" />
         <link rel="manifest" href="/manifest.json" />
+        {/* Métadonnées pour le logo Code Geniuses & Co. */}
+        <meta property="og:image:url" content={logoImageUrl} />
+        <meta property="og:image:secure_url" content={logoImageUrl} />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Code Geniuses & Co. - Logo CodGeni" />
+        <link rel="image_src" href={logoImageUrl} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
