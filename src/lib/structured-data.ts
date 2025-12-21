@@ -62,7 +62,7 @@ export const getOrganizationSchema = (): OrganizationSchema => ({
   '@type': 'Organization',
   name: 'CodGeni',
   url: siteUrl,
-  logo: `${siteUrl}${encodeImageUrl('/images/Code Geniuses & Co..png')}`,
+  logo: `${siteUrl}/images/favicon.png`,
   description: 'Agence de développement web créative basée en Haïti, spécialisée dans la création de sites web sur mesure, applications web et expériences digitales innovantes.',
   address: {
     '@type': 'PostalAddress',
